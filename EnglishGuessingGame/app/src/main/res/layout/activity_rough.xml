@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_back">
+
+    <RelativeLayout
+        android:id="@+id/score_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background">
+
+    <TextView
+        android:id="@+id/synonym_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="SYNONYMS"
+        android:background="@drawable/title_background"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_below="@+id/synonym_text"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/synonym_text">
+
+    <ImageView
+        android:id="@+id/lives1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:src="@drawable/lives_icon"/>
+        <ImageView
+            android:id="@+id/lives2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/lives_icon"/>
+        <ImageView
+            android:id="@+id/lives3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/lives_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/actual_score"
+            android:layout_below="@+id/synonym_text"
+            android:text="Score:"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/actual_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/synonym_text"
+        android:text="000"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:padding="5dp" />
+
+    <View
+        android:layout_below="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroller_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_card"
+        android:layout_above="@+id/next_button"
+        android:padding="5dp">
+        <LinearLayout
+            android:id="@+id/question_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/instruction_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/instruction"
+            android:contentDescription="Instructions" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#85F634"
+            android:onClick="questionsView"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="false"
+        android:onClick="questionsView"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
