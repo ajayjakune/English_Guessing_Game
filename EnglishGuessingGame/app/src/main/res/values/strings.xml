@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">English Guessing Game</string>
-    <string name="instructions_text"><h1>-- Instructions --</h1>
-    </string>
 </resources>

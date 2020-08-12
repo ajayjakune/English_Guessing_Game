@@ -10,7 +10,7 @@
         android:id="@+id/score_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border">
+        android:background="@drawable/title_background">
 
     <TextView
         android:id="@+id/synonym_text"
@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:text="SYNONYMS"
-        android:background="@drawable/border"
+        android:background="@drawable/title_background"
         android:textColor="@color/white"
         android:textSize="30sp" />
 

@@ -6,6 +6,10 @@
         android:topLeftRadius="10dp"
         android:bottomRightRadius="10dp"
         android:bottomLeftRadius="10dp"/>
-    <solid android:color="@color/white" />
-    <stroke android:width="2dip" android:color="#000000"/>
+    <stroke android:width="2dip" android:color="#FFFFFF"/>
+    <gradient
+        android:startColor="#FFD3BE"
+        android:endColor="#F8847B"
+        android:angle="-90"
+        />
 </shape>
