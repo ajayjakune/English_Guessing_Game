@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rough">
-        </activity>
+        <activity android:name=".MeaningsActivity"></activity>
+        <activity android:name=".AntonymsActivity" />
+        <activity android:name=".SynonymsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

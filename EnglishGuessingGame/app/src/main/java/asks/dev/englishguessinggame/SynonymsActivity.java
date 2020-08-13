@@ -22,7 +22,7 @@ import java.util.Random;
 
 
 
-public class rough extends AppCompatActivity {
+public class SynonymsActivity extends AppCompatActivity {
 
     Button start;
     Button next;
@@ -47,7 +47,7 @@ public class rough extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rough);
+        setContentView(R.layout.activity_synonyms);
 
         start = findViewById(R.id.start);
         next = findViewById(R.id.next_button);
@@ -304,7 +304,7 @@ public class rough extends AppCompatActivity {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(rough.this, MainActivity.class);
+                    Intent intent = new Intent(SynonymsActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
